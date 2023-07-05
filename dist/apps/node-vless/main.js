@@ -1,3 +1,4 @@
+console.log = () => {};
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ([
 /* 0 */,
@@ -5812,7 +5813,7 @@ function safeCloseWebSocket(socket) {
     }
 }
 exports.safeCloseWebSocket = safeCloseWebSocket;
-//https://github.com/v2ray/v2ray-core/issues/2636
+
 // 1 字节	  16 字节       1 字节	       M 字节	              1 字节            2 字节      1 字节	      S 字节	      X 字节
 // 协议版本	  等价 UUID	  附加信息长度 M	(附加信息 ProtoBuf)  指令(udp/tcp)	    端口	      地址类型      地址	        请求数据
 // 00                   00                                  01                 01bb(443)   02(ip/host)
