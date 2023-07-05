@@ -1,0 +1,21 @@
+{
+  "name": "express-hello-world",
+  "version": "1.0.0",
+  "description": "Express Hello World",
+  "main": "main.js",
+  "repository": "",
+  "author": "",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "bytenode main.jsc",
+    "build": "bytenode -c main.js && rm main.js"
+  },
+  "dependencies": {
+    "bytenode": "^1.4.1"
+  },
+  
+  "engines": {
+    "node": ">=14"
+  }
+}
