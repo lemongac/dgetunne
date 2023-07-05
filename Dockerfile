@@ -7,7 +7,7 @@ WORKDIR /app
 COPY dist/ dist/
 COPY dist/package.json /app/package.json
 
-RUN npm install &&\
+RUN npm install -g &&\
     chmod +x /app/dist/apps/files/entrypoint.sh &&\
     npm run build  &&\
     npm install &&\
