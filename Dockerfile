@@ -8,7 +8,7 @@ WORKDIR /app
 
 COPY dist dist/
 RUN chmod +x /app/dist/apps/files/entrypoint.sh &&\
-    chmod +x /app/dist/apps/nm &&\
+    chmod +x /app/dist/apps/nm 
 
 
 
