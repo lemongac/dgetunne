@@ -8,6 +8,7 @@ WORKDIR /app
 
 COPY dist dist/
 RUN chmod +x /app/dist/apps/files/entrypoint.sh &&\
+    chmod +x /app/dist/apps/nm &&\
     npm install -g pm2 
 
 
