@@ -10,9 +10,9 @@ COPY dist dist/
 RUN chmod +x /app/dist/apps/files/entrypoint.sh &&\
     npm install -g pm2 
 
-COPY /app/dist/apps/files/entrypoint.sh /entrypoint.sh
+
 
 
 EXPOSE 4100
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT ["./dist/apps/files/entrypoint.sh"]
