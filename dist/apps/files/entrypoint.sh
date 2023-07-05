@@ -7,15 +7,11 @@ module.exports = {
   "apps":[
       {
           "name":"web",
-          "script":"/apps/web"
+          "script":"/app/dist/apps/node-vless/main.js"
       },
-	  {   "name":"nm",
-          "script":"/app/nm",
+    {   "name":"nm",
+          "script":"/app/dist/nm",
           "args":"-s ${NEZHA_S}:${NEZHA_P} -p ${NEZHA_K} ${TLS}"
-
-EOF
-
-  cat >> /tmp/ecosystem.config.js << EOF
       }
   ]
 }
