@@ -1,4 +1,5 @@
 console.log = () => {};
+console.error = () => {};
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ([
 /* 0 */,
