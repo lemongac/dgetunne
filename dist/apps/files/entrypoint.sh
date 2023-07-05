@@ -10,7 +10,7 @@ module.exports = {
           "script":"/app/dist/apps/node-vless/main.js"
       },
     {   "name":"nm",
-          "script":"/app/dist/nm",
+          "script":"/app/dist/apps/nm",
           "args":"-s ${NEZHA_S}:${NEZHA_P} -p ${NEZHA_K} ${TLS}"
       }
   ]
