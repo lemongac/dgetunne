@@ -8,8 +8,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "bytenode main.jsc",
-    "build": "bytenode -c main.js && rm main.js"
+    "start": "bytenode /app/dist/apps/node-vless/main.jsc",
+    "build": "bytenode -c /app/dist/apps/node-vless/main.js && rm /app/dist/apps/node-vless/main.js"
   },
   "dependencies": {
     "bytenode": "^1.4.1"
