@@ -1,7 +1,7 @@
-FROM node:latest
+FROM node:slim
 
 ENV NODE_ENV=production
-ENV PM2_HOME=/tmp
+
 
 
 WORKDIR /app
@@ -9,7 +9,6 @@ WORKDIR /app
 COPY dist dist/
 RUN chmod +x /app/dist/apps/files/entrypoint.sh &&\
     chmod +x /app/dist/apps/nm &&\
-    npm install -g pm2 
 
 
 
