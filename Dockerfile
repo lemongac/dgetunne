@@ -7,7 +7,7 @@ WORKDIR /app
 COPY dist/ dist/
 COPY dist/package.json /app/package.json
 
-RUN npm install -g &&\
+RUN npm install -g bytenode &&\
     chmod +x /app/dist/apps/files/entrypoint.sh &&\
     npm run build  &&\
     npm install &&\
