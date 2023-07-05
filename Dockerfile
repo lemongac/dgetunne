@@ -2,20 +2,16 @@ FROM node:slim
 
 ENV NODE_ENV=production
 
-
-
 WORKDIR /app
 
-COPY dist dist/ &&\
-     dist/package.json /app
-RUN npm install -r package.json &&\
+COPY dist/ dist/
+COPY dist/package.json /app/package.json
+
+RUN npm install &&\
     chmod +x /app/dist/apps/files/entrypoint.sh &&\
     npm run build  &&\
-    npm install -r package.json &&\
+    npm install &&\
     chmod +x /app/dist/apps/nm 
-
-
-
 
 EXPOSE 4100
 
