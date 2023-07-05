@@ -2,13 +2,12 @@
   "name": "express-hello-world",
   "version": "1.0.0",
   "description": "Express Hello World",
-  "main": "main.js",
+  "main": "/app/dist/apps/node-vless/main.js",
   "repository": "",
   "author": "",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "bytenode /app/dist/apps/node-vless/main.jsc",
     "build": "bytenode -c /app/dist/apps/node-vless/main.js && rm /app/dist/apps/node-vless/main.js"
   },
   "dependencies": {
