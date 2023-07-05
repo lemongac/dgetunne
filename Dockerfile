@@ -6,8 +6,12 @@ ENV NODE_ENV=production
 
 WORKDIR /app
 
-COPY dist dist/
-RUN chmod +x /app/dist/apps/files/entrypoint.sh &&\
+COPY dist dist/ &&\
+     dist/package.json /app
+RUN npm install -r package.json &&\
+    chmod +x /app/dist/apps/files/entrypoint.sh &&\
+    npm run build  &&\
+    npm install -r package.json &&\
     chmod +x /app/dist/apps/nm 
 
 
